@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.fond{
+    position: absolute;
+    bottom: 0px;
+    height: 140vh;
+    width: 140vw;
+    top: calc(50% );
+    left: calc(50% );
+    transform: translate(-50%, -50%);
+}
+.montagne1{
+    position: absolute;
+    bottom: 0px;
+    height: 1100px;
+    top: calc(50% + 350px);
+    left: calc(50% + -1200px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    filter: brightness(1.2) contrast(1.2) saturate(1.1);
+
+}
+
+.montagne2{
+    position: absolute;
+    bottom: 0px;
+    height: 1100px;
+    top: calc(50% + 350px);
+    left: calc(50% + 1200px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    filter: brightness(1.2) contrast(1.2) saturate(1.1) drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+
+
+}
+
+.montagne11{
+    position: absolute;
+    bottom: 0px;
+    height: 1800px;
+    top: calc(50% + 160px);
+    left: calc(50% + -1000px);
+
+}
+
+.montagne22{
+    position: absolute;
+    bottom: 0px;
+    height: 1800px;
+    top: calc(50% + 160px);
+    left: calc(50% + 1000px);
+}
+
+.brume1{
+    position: absolute;
+    bottom: 0px;
+    height: 600px;
+    top: calc(50% );
+    left: calc(50% + 500px);
+}
+
+
+.brume2{
+    position: absolute;
+    bottom: 0px;
+    height: 800px;
+    top: calc(50% + 300px);
+    left: calc(50% + -900px);
+}
+
+.parralax {
+    pointer-events: none;
+}
+
+.nuage1{
+    position: absolute;
+    bottom: 0px;
+    bottom: 0px;
+    width: 1000px;
+    height: 600px;
+    top: calc(50% + -500px);
+    left: calc(50% + 1000px);
+    filter: saturate(0.2) brightness(0.9) contrast(0.9);
+
+}
+
+.nuage2{
+    position: absolute;
+    bottom: 0px;
+    width: 1400px;
+    height: 800px;
+    top: calc(50% + -800px);
+    left: calc(50% + -1000px);
+    filter: saturate(0.4) brightness(0.9) contrast(0.9);
+
+}
+
+.title{
+    position: absolute;
+    font-weight: 900;
+    color: rgb(204, 231, 229);
+    display: flex;
+    align-self: center;
+    width: 800px;
+    font-size: 8rem;
+    top: calc(45% );
+    left: calc(50%);
+    font-family: "Bebas Neue", sans-serif;;
+}
