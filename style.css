@@ -1,20 +1,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --orange: rgb(253, 159, 36);
+  }
 body{
     height: 200vh;
+    width: 100vw;
 }
+::-webkit-scrollbar {
+    width: 0;
+  }
 main{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
 }
+
+.navv {
+    position: fixed;
+    background: rgba(252, 251, 251, 80%);
+    padding: 40px 0;
+    margin: 0;
+}
+.linksNav{
+    list-style-type: none; 
+    padding: 0;
+
+}
+.linksNav > li >a{
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-family: "Jost", sans-serif;
+}
+
+.active {
+    color: white!important;
+    background-color: var(--orange);
+    border-radius: 50px;
+    padding: 2px 20px;
+}
 .fond{
     position: absolute;
     bottom: 0px;
     height: 140vh;
-    width: 140vw;
+    width: 4000px;
     top: calc(50% );
     left: calc(50% );
     transform: translate(-50%, -50%);
@@ -22,24 +55,24 @@ main{
 .montagne1{
     position: absolute;
     bottom: 0px;
-    height: 1100px;
-    top: calc(50% + 350px);
-    left: calc(50% + -1200px);
+    height: 100vh;
+    top: calc(50% + 25vh);
+    left: calc(50% + -45vw);
     transform: translate(-50%, -50%);
     z-index: 5;
-    filter: brightness(1.2) contrast(1.2) saturate(1.1);
+    filter: brightness(1.1) contrast(1.1) saturate(1.1);
 
 }
 
 .montagne2{
     position: absolute;
     bottom: 0px;
-    height: 1100px;
-    top: calc(50% + 350px);
-    left: calc(50% + 1200px);
+    height: 100vh;
+    top: calc(50% + 25vh);
+    left: calc(50% + 45vw);
     transform: translate(-50%, -50%);
     z-index: 5;
-    filter: brightness(1.2) contrast(1.2) saturate(1.1) drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    filter: brightness(1.1) contrast(1.1) saturate(1.1) ;
 
 
 }
@@ -47,35 +80,35 @@ main{
 .montagne11{
     position: absolute;
     bottom: 0px;
-    height: 1800px;
-    top: calc(50% + 160px);
-    left: calc(50% + -1000px);
+    height: 115vh;
+    top: calc(50% + 15vh);
+    left: calc(50% + -35vw);
 
 }
 
 .montagne22{
     position: absolute;
     bottom: 0px;
-    height: 1800px;
-    top: calc(50% + 160px);
-    left: calc(50% + 1000px);
+    height: 120vh;
+    top: calc(50% + 15vh);
+    left: calc(50% + 35vw);
 }
 
 .brume1{
     position: absolute;
     bottom: 0px;
-    height: 600px;
+    height: 50vh;
     top: calc(50% );
-    left: calc(50% + 500px);
+    left: calc(50% + 30vw);
 }
 
 
 .brume2{
     position: absolute;
     bottom: 0px;
-    height: 800px;
-    top: calc(50% + 300px);
-    left: calc(50% + -900px);
+    height: 65vh;
+    top: calc(50% + 35vh);
+    left: calc(50% + -30vw);
 }
 
 .parralax {
@@ -87,10 +120,9 @@ main{
     position: absolute;
     bottom: 0px;
     bottom: 0px;
-    width: 1000px;
-    height: 600px;
-    top: calc(50% + -500px);
-    left: calc(50% + 1000px);
+    height:20vh;
+    top: calc(50% + -40vh);
+    left: calc(50% + 40vw);
     filter: saturate(0.2) brightness(0.9) contrast(0.9);
 
 }
@@ -98,10 +130,9 @@ main{
 .nuage2{
     position: absolute;
     bottom: 0px;
-    width: 1400px;
-    height: 800px;
-    top: calc(50% + -800px);
-    left: calc(50% + -1000px);
+    height: 20vh;
+    top: calc(50% + -50vh);
+    left: calc(50% + -40vw);
     filter: saturate(0.4) brightness(0.9) contrast(0.9);
 
 }
@@ -109,12 +140,61 @@ main{
 .title{
     position: absolute;
     font-weight: 900;
-    color: rgb(204, 231, 229);
     display: flex;
     align-self: center;
-    width: 800px;
-    font-size: 8rem;
-    top: calc(45% );
+    width: 70vw;
+    font-size: 3rem;
+    top: calc(50% );
     left: calc(50%);
-    font-family: "Bebas Neue", sans-serif;;
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(#79c1fc, #bfc1d3);
+    color: transparent;
+    background-clip: text;
 }
+
+@media screen and (min-width: 762px) { 
+    .title{
+        width: 80vw;
+        font-size: 4rem;
+    }
+    .nuage1{
+        height: 30vh;
+    }
+    .nuage2{
+        height: 30vh;
+    }
+ }
+
+ @media screen and (min-width: 992px) { 
+    .title{
+        width: 60vw;
+        font-size: 5rem;
+    }
+    .nuage1{
+        height: 40vh;
+    }
+    .nuage2{
+        height: 40vh;
+    }
+ }
+ @media screen and (min-width: 1400px) { 
+    .title{
+        width: 50vw;
+        font-size: 7rem;
+    }
+    .nuage1{
+        height: 50vh;
+    }
+    .nuage2{
+        height: 50vh;
+    }
+ }
+
+ @media screen and (min-width: 1400px) { 
+    .title{
+
+        font-size: 8.5rem;
+    }
+
+ }
+
