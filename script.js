@@ -31,3 +31,28 @@ window.addEventListener("mousemove", (e)=>{
         }px))`;
     })
 })
+
+
+
+const burger = document.querySelector('.burger')
+
+burger.addEventListener('click', ()=> {
+    burger.classList.toggle('active')
+})
+
+//ca sera pour cacher la nav en scroll bas et l'afficher en scroll haut
+window.addEventListener('scroll', () => {
+    if (window.scrollY > previousScrollY) {
+        console.log('Défilement descendant détecté');
+    }
+    previousScrollY = window.scrollY;
+});
+
+let previousScrollY = window.scrollY;
+
+
+
+
+
+
+

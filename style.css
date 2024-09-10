@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --orange: rgb(252, 174, 30);
+    --orange: #ff723e;
+    --blancT:rgba(247, 255, 255, 0.884);
+
   }
 body{
     height: 200vh;
@@ -21,7 +23,7 @@ main{
 
 .navv {
     position: fixed;
-    padding: 40px 0;
+    padding: 65px 0;
     margin: 0;
 }
 .linksNav{
@@ -30,20 +32,12 @@ main{
 
 }
 .linksNav > li >a{
-    text-decoration: none;
-    color: var(--orange);
-    font-size: 2.5rem;
-    background-color: white;
-    font-family: "Nunito", sans-serif;
-    border-radius: 50px;
-    padding: 2px 20px;
+    visibility: hidden;
 }
 
 .active {
-    color: white!important;
+    color: var(--blancT)!important;
     background-color: var(--orange)!important;
-    border-radius: 50px;
-    padding: 2px 20px;
 }
 .fond{
     position: absolute;
@@ -154,6 +148,63 @@ main{
     background-clip: text;
 }
 
+.burger{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: var(--blancT)!important;
+}
+.burger span{
+
+    width: 90%;
+    height:6px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff723e;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+.burger span::before, .burger span::after{
+    content: '';
+    width: 80%;
+    height:6px;
+    position: absolute;
+    background: #ff723e;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out, bottom 0.5s ease-in-out;
+
+
+}
+
+.burger span::before{
+    top: -15px;
+}
+.burger span::after{
+    bottom: -15px;
+}
+
+.burger.active span{
+    background-color: transparent;
+}
+
+.burger.active span::before{
+    transform: translate(-50% ) rotateZ(-45deg);
+    top: 0;
+}
+
+.burger.active span::after{
+    transform: translate(-50%) rotateZ(45deg);
+    bottom: 0;
+}
+
 @media screen and (min-width: 762px) { 
     .title{
         width: 80vw;
@@ -164,6 +215,16 @@ main{
     }
     .nuage2{
         height: 30vh;
+    }
+    .linksNav > li >a{
+        text-decoration: none;
+        color: var(--orange);
+        font-size: 1rem;
+        background-color: var(--blancT);
+        font-family: "Nunito", sans-serif;
+        border-radius: 50px;
+        border: 3px solid var(--orange);
+        padding: 5px 10px;
     }
  }
 
@@ -198,5 +259,17 @@ main{
         font-size: 8.5rem;
     }
 
+    @media screen and (min-width: 1800px) { 
+        .linksNav > li >a{
+            text-decoration: none;
+            color: var(--orange);
+            font-size: 2.5rem;
+            background-color: var(--blancT);
+            font-family: "Nunito", sans-serif;
+            border-radius: 50px;
+            border: 3px solid var(--orange);
+            padding: 20px 30px;
+        }
  }
 
+ }
