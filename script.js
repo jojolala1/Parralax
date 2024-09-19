@@ -44,7 +44,7 @@ window.addEventListener("deviceorientation", (event) => {
 
     // Ajuster les valeurs pour être utilisées dans la transformation
     const xValue = gamma * 5; // Multiplier pour ajuster la sensibilité
-    const yValue = beta * 5; // Multiplier pour ajuster la sensibilité
+    const yValue = beta * -5; // Multiplier pour ajuster la sensibilité
 
     applyParallax(xValue, yValue);
 });
