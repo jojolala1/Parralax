@@ -43,7 +43,7 @@ window.addEventListener("deviceorientation", (event) => {
     const beta = event.beta; // Inclinaison haut/bas
 
     // Ajuster les valeurs pour être utilisées dans la transformation
-    const xValue = gamma * 5; // Multiplier pour ajuster la sensibilité
+    const xValue = gamma * 8; // Multiplier pour ajuster la sensibilité
     const yValue = beta * -5; // Multiplier pour ajuster la sensibilité
 
     applyParallax(xValue, yValue);
