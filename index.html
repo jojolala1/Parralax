@@ -9,8 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <nav class=" z-1 w-100 navv ">
+
+<body class="d-flex flex-column align-items-center">
+    <div class="titleContent">
+        <h1 class="titleh1">Arrtez de chercher !</h1>
+        <h2 class="titleh2">Votre futur site<br> web est ici.</h2>
+    </div>
+
+    <div id="navPage" class="navPage hidden">
+        <ul class="navPageChild ">
+            <li >
+                <a class="active" href="#">Accueil</a>
+             </li>
+            <li>
+               <a href="#">Profil</a>
+            </li>
+            <li>
+                <a href="#">Mes projets</a>
+             </li>
+             <li>
+                <a href="#">Contact</a>
+             </li>
+             <li>
+                <a href="#">Compétences</a>
+             </li>
+        </ul>
+    </div>
+    <button class="burger"><span class="barBurger"></span></button>
+
+    <nav class=" z-1 navv ">
+
         <ul class=" d-flex justify-content-around linksNav my-0">
             <li >
                 <a class="active" href="#">Accueil</a>
@@ -28,27 +56,28 @@
                 <a href="#">Compétences</a>
              </li>
         </ul>
-        <button class="burger"><span class="barBurger"></span></button>
-    </nav>
 
-    <main class="w-100" id="firstPage">
-        <img class="fond parralax" data-speedx="0.3" data-speedy="0.2"data-speedz="0.5" data-rotation="0" src="./images/fond.jpg" alt="">
-        <img class="montagne11 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0.2" data-rotation="0.1" src="./images/montagne11.png" alt="">
-        <img class=" montagne22 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0.2" data-rotation="0.1" src="./images/montagne22.png" alt="">
-        <img class="montagne1 parralax" data-speedx="0.12" data-speedy="0.065" data-speedz="0.5" data-rotation="0.2" src="./images/montagne1.png" alt="">
-        <img class=" montagne2 parralax" data-speedx="0.12" data-speedy="0.065" data-speedz="0.5" data-rotation="0.2" src="./images/montagne2.png" alt="">
-        <img class="brume1 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0.5" data-rotation="0.25" src="./images/brume.png" alt="">
-        <img class="brume2 parralax" data-speedx="0.15" data-speedy="0.15"  data-speedz="0.5" data-rotation="0.25" src="./images/brume.png" alt="">
-        <img class="nuage1 parralax" data-speedx="0.25" data-speedy="0.125" data-speedz="0" data-rotation="0.25" src="./images/nuage.png" alt="">
-        <img class="nuage2 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0" data-rotation="0.25" src="./images/nuage.png" alt="">
-        <img class="fond parralax z-1"  data-speedx="0.3" data-speedy="0.15" data-speedz="0" data-rotation="0.05" src="./images/grosseBrume.png" alt="">
-        <div class="w-100 h-100 position-absolute d-flex align-items-center justify-content-center">
-            
-        <h1 data-speedx="0.2" data-speedy="0.15" data-speedz="0.1" data-rotation="0.15" class="title text-center parralax">VOTRE DEVELOPPEUR A TOUTE EPREUVE</h1>
-        </div>
-
-
-    </main>
+    </nav> 
+    <div class="pcContent ">
+        <img src="./images/pc.png" alt="pc" class="pc">
+        <main  id="firstPage">
+            <img class="fond parralax" data-speedx="0.3" data-speedy="0.2"data-speedz="0.5" data-rotation="0" src="./images/fond.jpg" alt="">
+            <img class="montagne11 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0.2" data-rotation="0.1" src="./images/montagne11.png" alt="">
+            <img class=" montagne22 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0.2" data-rotation="0.1" src="./images/montagne22.png" alt="">
+            <img class="montagne1 parralax" data-speedx="0.12" data-speedy="0.065" data-speedz="0.5" data-rotation="0.2" src="./images/montagne1.png" alt="">
+            <img class=" montagne2 parralax" data-speedx="0.12" data-speedy="0.065" data-speedz="0.5" data-rotation="0.2" src="./images/montagne2.png" alt="">
+            <img class="brume1 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0.5" data-rotation="0.25" src="./images/brume.png" alt="">
+            <img class="brume2 parralax" data-speedx="0.15" data-speedy="0.15"  data-speedz="0.5" data-rotation="0.25" src="./images/brume.png" alt="">
+            <img class="nuage1 parralax" data-speedx="0.25" data-speedy="0.125" data-speedz="0" data-rotation="0.25" src="./images/nuage.png" alt="">
+            <img class="nuage2 parralax" data-speedx="0.2" data-speedy="0.15" data-speedz="0" data-rotation="0.25" src="./images/nuage.png" alt="">
+            <img class="fond parralax z-1"  data-speedx="0.3" data-speedy="0.15" data-speedz="0" data-rotation="0.05" src="./images/grosseBrume.png" alt="">
+            <div class="w-100 h-100 position-absolute d-flex align-items-center justify-content-center">
+                
+            <h1 data-speedx="0.2" data-speedy="0.15" data-speedz="0.1" data-rotation="0.15" class="title text-center parralax">Votre site web a VOTRE image</h1>
+            </div>
+        </main>
+    </div>
+    
 
 
 </body>
